@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+.navbar-modify{
+    padding-top: 1.75rem;
+    padding-bottom: 1.75rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    line-height: 1.75rem;
+}
+
+.btn-teal{
+    color: #fff;
+    background-color: #00ba94;
+    border-color: #00ba94;
+}
+
+.btn-teal:hover {
+    color: #fff !important;
+    background-color: #009e7e !important;
+    border-color: #009576;
+}
+
+
+/* ==========header========== */
+
+.header{
+    /* height: 85vh; */
+    background-image: url("/Day-6/asset/image/p-7.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: 0.5;
+}
+
+.header-content{
+    width: 100%;
+    height: 85vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-content-ptext{
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: rgba(255, 255, 255, 0.5) !important;
+    width: 66.66666667%;
+}
+
+
+/* ========SearchBar======== */
+
+.search {
+    width: 55%;
+    position: relative;
+    display: flex;
+    margin: 0 auto;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 1px solid #00B4CC;
+    border-right: none;
+    padding: 7px;
+    height: 42px;
+    border-radius: 7px 7px 7px 7px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search-btn{
+    width: 85px;
+}
+
+.searchTerm:focus {
+    color: #00B4CC;
+}
+
+
+
+
+/*========= Media Query ========= */
+
+@media screen and (max-width: 425px) {
+    .header-content-ptext{
+        /* text-align: justify; */
+        word-break: break-all;
+    }
+
+    .search {
+        width: 80%;
+        position: relative;
+        display: flex !important;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+
+    .searchTerm{
+        margin-bottom: 15px;
+    }
+
+    .search-btn{
+        width: 85px;
+        margin: 0 auto !important;
+    }
+  }
