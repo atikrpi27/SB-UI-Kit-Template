@@ -6,11 +6,12 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Directory - SB UI Kit Pro</title>
+  <!-------------- Fontawesome CDN -------------->
   <script src="https://kit.fontawesome.com/d2653e3bfe.js" crossorigin="anonymous"></script>
   <!-------------- Favicon -------------->
   <link rel="icon" type="image" href="asset/image/icon/favicon.png" />
-  <!-------------- Fontawesome CDN -------------->
-  <!-- <script src="https://kit.fontawesome.com/11122d7ca0.js" crossorigin="anonymous"></script> -->
+  <!-------------- Google font CDN -------------->
+  <link href="https://fonts.cdnfonts.com/css/metropolis" rel="stylesheet">
   <!-------------- Bootstrap CSS -------------->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
 
@@ -22,16 +23,16 @@
 <body>
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light navbar-modify">
-      <div class="container-fluid">
+      <div class="container px-3">
         <a class="navbar-brand fw-bold" href="#">SB UI Kit Pro</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fw-semibold">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-lg-5 fw-semibold">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
 
             <li class="nav-item dropdown">
@@ -104,7 +105,7 @@
               </ul>
             </li>
           </ul>
-          <a class="btn fw-semibold ms-lg-4 btn-teal" href="#">
+          <a class="btn fw-semibold ms-lg-3 btn-teal buy-btn" href="#">
             Buy Now
             <i class="fa-sharp fa-solid fa-arrow-right ms-2"></i>
           </a>
@@ -116,20 +117,17 @@
   <!-------------------- Header Start -------------------->
 
   <header>
-    <div class="row">
-      <div class="col-lg-12 col-md-12 col-sm-12">
-        <div class="header overlay">
-          <div class="container">
-            <div class="header-content text-center">
-              <h1 class="text-white">Find the best businesses in town</h1>
+    <div class="header overlay">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 col-md-12 col-sm-12">
+            <div class="header-content text-center px-5">
+              <h1 class="text-white header-content-htext">Find the best businesses in town</h1>
               <p class="header-content-ptext">Search for restaurants, contractors, and other local businesses in your
                 area to find out which ones are the best!</p>
 
-              <div class="search mt-3">
+              <div class="search mt-4">
                 <input type="text" class="searchTerm" placeholder="Find local businesses...">
-                <!-- <button type="submit" class="searchButton">
-                  <i class="fa fa-search"></i>
-                </button> -->
 
                 <button class="btn btn-teal search-btn ms-3" type="submit">Search</button>
               </div>
@@ -142,27 +140,91 @@
 
   <!-------------------- Content Section 1 Start -------------------->
 
-  <section class="bg-light pt-5">
-    <div class="container">
+  <section class="bg-light py-10">
+    <div class="container px-5">
       <div class="row">
         <div class="col-lg-12 col-md-12 col-sm-12">
           <div class="business-section">
             <div class="mb-5 text-center">
-              <div class="text-xs text-uppercase-expanded text-primary mb-2">Browse Businesses</div>
+              <div class="text-xs text-uppercase-expanded mb-2">Browse Businesses</div>
               <p class="lead mb-0">Not sure what to search for? Browse some of the most popular categories.</p>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="business-card justify-content-center">
+        <div class="row gx-5">
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-1.jpg" alt="image-1">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Restaurants</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-2.jpg" alt="image-2">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Dry Cleaning</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-5.jpg" alt="image-5">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Painters</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-6.jpg" alt="image-6">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Medical</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-3.jpg" alt="image-3">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Gyms</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5 mb-lg-0">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-4.jpg" alt="image-4">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Coffee</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6 mb-5 mb-md-0">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-8.jpg" alt="image-8">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Events</h6>
+              </div>
+            </a>
+          </div>
+          <div class="col-xl-3 col-lg-4 col-md-6">
+            <a class="card lift" href="#">
+              <img class="card-img-top" src="asset/image/p-12.jpg" alt="image-12">
+              <div class="card-body text-center py-3">
+                <h6 class="card-title mb-0">Breweries</h6>
+              </div>
+            </a>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-
-
-
-
   <!-------------------- Header Start -------------------->
-
 
   <!-------------- Bootstrap CDN -------------->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
