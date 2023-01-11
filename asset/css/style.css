@@ -57,23 +57,65 @@ body {
     justify-content: center !important;
 }
 
-.navbar-modify {
-    padding-top: 1.7rem;
-    padding-bottom: 1.7rem;
+.nav-ul {
+    font-family: 'Metropolis';
+    font-weight: 500 !important;
+    font-style: normal;
+    font-size: 16px;
 }
+
+.navbar-modify {
+    padding-top: 1.65rem;
+    padding-bottom: 1.65rem;
+}
+
+.navbar-arrow {
+    font-size: 10px;
+}
+
+.dropdown-toggle1::after {
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin: 0 0 0.3em 0.1em;
+    /* vertical-align: middle; */
+    /* content: ""; */
+    /* border: 0.1em solid; */
+    border-width: 0 0.08em 0.08em 0;
+}
+
+
+.show {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0rem);
+}
+
+.arrow {
+    transform: rotate(90deg);
+    transition: 0.2s ease;
+}
+
 
 .btn {
     display: inline-flex;
     align-items: center;
     justify-content: center;
     font-size: 15px;
-    line-height: 1.75rem;
+    line-height: 1.85rem;
 }
 
 .buy-btn {
-    width: 120px;
+    width: 121px;
     margin-right: 5px;
     padding: 6px 0px 6px 0px;
+}
+
+.buy-btn svg {
+    height: 12px;
+    width: 12px;
+    margin-left: 6px;
+    transform: scale(.85);
 }
 
 .nav-item {
@@ -81,7 +123,7 @@ body {
 }
 
 .nav-item:last-child {
-    margin-right: 0;
+    margin-right: 0px;
 }
 
 .btn-teal {
@@ -108,6 +150,7 @@ body {
     position: relative;
     padding-top: 8rem;
     padding-bottom: 8rem;
+    z-index: -555;
 }
 
 .overlay {
@@ -135,18 +178,15 @@ body {
 }
 
 .header-content-htext {
-    font-family: 'MetropolisNF', sans-serif;
-    letter-spacing: 0.02em;
-    font-size: 2.6rem;
-    font-weight: 400;
+    font-family: 'Metropolis';
+    font-size: 2.5rem;
+    font-weight: 500;
 }
 
 .header-content-ptext {
-    font-family: 'MetropolisNF', sans-serif;
-    letter-spacing: 0.02em;
+    font-family: 'Metropolis', sans-serif;
     font-size: 1.15rem;
-    /* font-weight: 500; */
-    color: rgba(255, 255, 255, 0.5) !important;
+    color: rgba(255, 255, 255, 0.7) !important;
     width: 66.66666667%;
 }
 
@@ -168,7 +208,7 @@ body {
     width: 72%;
     height: 44px;
     padding: 0.875rem 1.125rem;
-    font-family: 'MetropolisNF', sans-serif !important;
+    font-family: 'Metropolis', sans-serif !important;
     font-size: 0.875rem !important;
     font-weight: 400;
     line-height: 1 !important;
@@ -209,10 +249,18 @@ body {
 
 .text-uppercase-expanded {
     color: #0d6efd;
-    font-family: 'monospace', sans-serif;
+    /*font-family: 'monospace', sans-serif;
     font-weight: bolder !important;
     letter-spacing: 0.125em;
+    text-transform: uppercase; */
+
+    font-family: 'Metropolis';
+    color: rgb(10 97 225);
+    letter-spacing: 0.125em;
     text-transform: uppercase;
+    font-weight: 700;
+    font-size: 12.5px !important;
+    transform: scale(1, 1.05);
 }
 
 .lead {
@@ -220,6 +268,7 @@ body {
     color: #69707a;
     font-size: 1.1rem;
     font-weight: 400;
+    word-spacing: 1px;
 }
 
 
@@ -262,6 +311,7 @@ body {
 .card-body {
     flex: 1 1 auto;
     padding: 1.35rem 1.35rem;
+    font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
 }
 
 
@@ -279,7 +329,7 @@ body {
 .latest-news p,
 .latest-news-small-text {
     color: #a7aeb8 !important;
-    font-family: 'MetropolisNF', sans-serif;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .latest-news-email::placeholder {
@@ -292,7 +342,7 @@ body {
 .latest-news-email {
     background-color: #eef2f8 !important;
     font-size: 14px;
-    font-family: 'MetropolisNF', sans-serif;
+    font-family: 'Metropolis', sans-serif;
     padding: 15px 15px 15px 20px;
 
 }
@@ -309,16 +359,16 @@ body {
 .card-small-text {
     color: #74737F !important;
     font-size: 0.875em;
-    font-family: 'MetropolisNF', sans-serif;
+    font-family: 'Metropolis', sans-serif;
 }
 
-.card-footer {    
+.card-footer {
     padding: 1rem 1.35rem;
     background-color: rgba(33, 40, 50, 0.03);
     border-top: 1px solid rgba(33, 40, 50, 0.125);
 }
 
-.card-footer i{
+.card-footer i {
     color: #69707A;
     display: inline-block;
 }
@@ -326,7 +376,7 @@ body {
 
 /*=========== Footer ===========*/
 
-.bg-dark{
+.bg-dark {
     background-color: rgb(33, 40, 50);
 }
 
@@ -354,11 +404,11 @@ body {
 .footer a {
     color: rgba(255, 255, 255, 0.6);
     text-decoration: none;
-    font-family: 'MetropolisNF', sans-serif;
+    font-family: 'Metropolis', sans-serif;
 }
 
 .text-uppercase {
-    font-family: 'MetropolisNF', sans-serif;
+    font-family: 'Metropolis', sans-serif;
     font-weight: bolder !important;
     letter-spacing: 0.125em;
     text-transform: uppercase;
@@ -366,6 +416,14 @@ body {
 
 
 /*========= Media Query ========= */
+
+@media screen and (min-width: 992px) {
+    .business-section {
+        width: 45%;
+        margin: 0 auto;
+
+    }
+}
 
 @media screen and (max-width: 425px) {
     .header-content-ptext {
