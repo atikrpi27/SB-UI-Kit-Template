@@ -57,9 +57,15 @@ body {
     justify-content: center !important;
 }
 
+.nav-logo{
+    font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color emoji;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
 .nav-ul {
     font-family: 'Metropolis';
-    font-weight: 500 !important;
+    font-weight: 500;
     font-style: normal;
     font-size: 16px;
 }
@@ -67,6 +73,7 @@ body {
 .navbar-modify {
     padding-top: 1.65rem;
     padding-bottom: 1.65rem;
+    z-index: 1;
 }
 
 .navbar-arrow {
@@ -78,16 +85,13 @@ body {
     width: 0.4em;
     height: 0.4em;
     margin: 0 0 0.3em 0.1em;
-    /* vertical-align: middle; */
-    /* content: ""; */
-    /* border: 0.1em solid; */
     border-width: 0 0.08em 0.08em 0;
 }
 
 
 .show {
-    visibility: visible;
-    opacity: 1;
+    /* visibility: visible; */
+    /* opacity: 1; */
     transform: translateY(0rem);
 }
 
@@ -150,7 +154,6 @@ body {
     position: relative;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    z-index: -555;
 }
 
 .overlay {
