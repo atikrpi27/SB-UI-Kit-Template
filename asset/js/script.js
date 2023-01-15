@@ -28,8 +28,6 @@
 //     }
 // });
 
-
-
 //================== Jquery ==================//
 
 $(document).ready(function () {
@@ -39,16 +37,18 @@ $(document).ready(function () {
     child.addClass("arrow");
 
     let show = parent.find(".show").attr("class");
-    console.log("show",show)
+    console.log("show", show);
 
     if ($(this).hasClass("show")) {
       // alert("show")
       console.log("show");
       child.addClass("arrow");
-    } 
-
-    else {
+    } else {
       child.removeClass("arrow");
     }
+  });
+
+  $("body").on("click", function () {
+    $(".navbar-arrow").removeClass("arrow");
   });
 });
