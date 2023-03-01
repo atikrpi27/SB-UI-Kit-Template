@@ -462,9 +462,22 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+    .banner{
+        height: 85vh;
+    }
+
+    .banner-content {
+        margin-top: -8%;
+    }
+
     .banner-content-ptext {
         width: 100%;
+        font-size: 16px;
         word-break: break-all;
+    }
+
+    .banner-content-htext {
+        font-size: 34px;
     }
 
     .search {
@@ -477,11 +490,23 @@ body {
 
     .searchTerm {
         width: 100%;
-        margin-bottom: 15px;
+        margin-bottom: 25px;
     }
 
     .search-btn {
         width: 85px;
         margin: 0 auto !important;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner-content-htext {
+        font-size: 28px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .banner-content-htext {
+        font-size: 26px;
     }
 }
