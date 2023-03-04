@@ -463,8 +463,8 @@ body {
 
 @media screen and (max-width: 425px) {
     .banner{
-        height: 75vh !important;
-        padding-top: 7rem !important;
+        height: 83vh !important;
+        padding-top: 8rem !important;
     }
 
     /* .banner-content {
