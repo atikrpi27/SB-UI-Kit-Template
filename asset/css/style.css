@@ -463,7 +463,7 @@ body {
 
 @media screen and (max-width: 425px) {
     .banner{
-        height: 83vh !important;
+        height: 55vh !important;
         padding-top: 8rem !important;
     }
 
@@ -502,7 +502,7 @@ body {
 
 @media screen and (max-width: 375px) {
     .banner{
-        height: 70vh !important;
+        height: 55vh !important;
         padding-top: 7rem !important;
     }
     .banner-content-htext {
@@ -512,7 +512,7 @@ body {
 
 @media screen and (max-width: 320px) {
     .banner{
-        height: 70vh !important;
+        height: 55vh !important;
         padding-top: 7rem !important;
     }
     .banner-content-htext {
