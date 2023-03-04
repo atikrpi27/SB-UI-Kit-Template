@@ -464,11 +464,12 @@ body {
 @media screen and (max-width: 425px) {
     .banner{
         height: 85vh;
+        padding-bottom: 0px !important;
     }
 
-    .banner-content {
+    /* .banner-content {
         margin-top: -8%;
-    }
+    } */
 
     .banner-content-ptext {
         width: 100%;
