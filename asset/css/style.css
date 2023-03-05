@@ -219,7 +219,7 @@ body {
     background-color: #eef2f8 !important;
     border-color: #eef2f8;
     display: block;
-    width: 72%;
+    width: 75%;
     height: 44px;
     padding: 0.875rem 1.125rem;
     font-size: 0.875rem !important;
@@ -248,7 +248,7 @@ body {
 }
 
 .search-btn {
-    width: 85px;
+    width: 90px;
     font-family: Metropolis, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color emoji;
     font-weight: 500;
     line-height: 1rem;
@@ -454,15 +454,72 @@ body {
 
 /*========= Media Query ========= */
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1025px) {
+    .banner {
+        height: 65vh !important;
+        padding-top: 14rem !important;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .banner {
+        height: 65vh !important;
+        padding-top: 14rem !important;
+    }
+
+    .search {
+        width: 65%;
+    }
+
+    .search-btn {
+        width: 100px;
+    }
+
     .business-section {
         width: 50%;
         margin: 0 auto;
     }
 }
 
+@media screen and (max-width: 768px) {
+    .banner {
+        height: 65vh !important;
+        padding-top: 13rem !important;
+    }
+
+    .banner-content-ptext {
+        width: 100%;
+        font-size: 16px;
+        word-break: break-all;
+    }
+
+    .banner-content-htext {
+        font-size: 34px;
+    }
+
+    .search {
+        width: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .searchTerm {
+        width: 100%;
+        margin-bottom: 25px;
+        width: 80%;
+    }
+
+    .search-btn {
+        width: 85px;
+        margin: 0 auto !important;
+    }
+}
+
 @media screen and (max-width: 425px) {
-    .banner{
+    .banner {
         height: 60vh !important;
         padding-top: 8rem !important;
     }
@@ -501,20 +558,22 @@ body {
 }
 
 @media screen and (max-width: 375px) {
-    .banner{
-        height: 60vh !important;
+    .banner {
+        height: 70vh !important;
         padding-top: 7rem !important;
     }
+
     .banner-content-htext {
         font-size: 28px;
     }
 }
 
 @media screen and (max-width: 320px) {
-    .banner{
+    .banner {
         height: 60vh !important;
         padding-top: 7rem !important;
     }
+
     .banner-content-htext {
         font-size: 26px;
     }
