@@ -454,17 +454,24 @@ body {
 
 /*========= Media Query ========= */
 
+@media screen and (min-width: 1440px) {
+    .banner {
+        height: 85vh !important;
+        padding-top: 22rem !important;
+    }
+}
+
 @media screen and (min-width: 1025px) {
     .banner {
-        height: 65vh !important;
-        padding-top: 14rem !important;
+        height: 85vh !important;
+        padding-top: 10rem !important;
     }
 }
 
 @media screen and (max-width: 1024px) {
     .banner {
-        height: 65vh !important;
-        padding-top: 14rem !important;
+        height: 85vh !important;
+        padding-top: 10rem !important;
     }
 
     .search {
@@ -483,8 +490,8 @@ body {
 
 @media screen and (max-width: 768px) {
     .banner {
-        height: 65vh !important;
-        padding-top: 13rem !important;
+        height: 85vh !important;
+        padding-top: 8rem !important;
     }
 
     .banner-content-ptext {
